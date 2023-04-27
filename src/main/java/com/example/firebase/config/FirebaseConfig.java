@@ -20,7 +20,7 @@ public class FirebaseConfig {
 
   @PostConstruct
   public void init() throws IOException {
-    String filename = "";
+    String filename = "fcm.json";
     Resource resource = resourceLoader.getResource("classpath:" + filename);
     File file = resource.getFile();
     FileInputStream serviceAccount = new FileInputStream(file);
